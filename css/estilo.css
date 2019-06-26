@@ -1,0 +1,87 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background:#F0F;
+	font-family:Helvetica, Arial;
+}
+
+#contenedor{
+	border:1px dashed red;
+	width:100%; /*width:900px;*/
+	margin:0 auto;
+	background:#66FFFF;
+	overflow:hidden;
+}
+
+header{
+	border:1px solid orange;
+	background:#FF3;
+	height:120px;
+}
+
+header h1{
+	color:#FFF;
+	padding:20px 0;
+	text-align:center;
+}
+
+.main{
+	width:70%; /*width:700px;*/
+	background:#33C;
+	padding:20px;
+	float:left;
+}
+
+.main img{
+	width:100%;
+	height:auto;
+}
+
+aside{
+	float:left;
+	width:20%; /*width:120px;*/
+	padding:20px;
+	background:#F69;
+}
+
+footer{
+	float:left;	
+	width:100%;	/*width:800px;*/
+	padding:20px;
+	background:#FF0;
+	color:#00F;
+}
+
+@media screen and (max-width:800px){
+	.main{
+		background:#C00;
+		color:#fff;
+	}
+}
+
+@media screen and (max-width:600px){
+	.main{
+		background:#C00;
+		color:#fff;
+		width:100%;
+	}
+	
+	aside{
+		width:100%;
+	}
+}
+
+@media screen and (max-width:400px){
+	.main{
+		background:#C10;
+		color:#000;
+	}
+	
+	aside{
+		display:none;
+	}
+}
